@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #f3f8ff;
+}
+label {
+  display: block;
+}
+input {
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+}
+input:focus {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-loader {
+  border: 2px solid #f3f3f3; /* Light gray border */
+  border-top: 2px solid #3498db; /* Blue border */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite; /* Rotate animation */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
